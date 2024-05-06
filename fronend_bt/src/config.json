@@ -1,0 +1,42 @@
+{
+    "assets": {
+        "BTCUSD": {
+            "allocation": 0.5,
+            "strategy": {
+                "buy_sell_engine": {
+                    "buy_condition": "tclose.crossover.upper_band",
+                    "is_on_going": true,
+                    "sell_condition": "tclose.crossover.lower_band",
+                    "side": "both"
+                },
+                "position_sizing": {
+                    "equity_risk": 0.5,
+                    "initial_risk": 0.02,
+                    "on_going_limit": 0.95
+                }
+            }
+        },
+        "ETHUSD": {
+            "allocation": 0.5,
+            "strategy": {
+                "buy_sell_engine": {
+                    "buy_condition": "tclose.crossover.upper_band",
+                    "is_on_going": true,
+                    "sell_condition": "tclose.crossover.lower_band",
+                    "side": "both"
+                },
+                "position_sizing": {
+                    "equity_risk": 0.5,
+                    "initial_risk": 0.02,
+                    "on_going_limit": 0.95
+                }
+            }
+        }
+    },
+    "capital": 100000,
+    "end": "2024-03-12",
+    "length_atr": 14,
+    "length_ema": 15,
+    "start": "2011-08-18",
+    "volatility_factor": 1
+}
